@@ -1,33 +1,34 @@
-
 #include <stdio.h>
 
 int main() {
-    char cidade[50];
-    int populacao;
-    float area, PIB;
-    int pontos_turisticos;
+    // Dados de São Paulo
+    char cidade1[] = "São Paulo";
+    int populacao1 = 12300000;
+    float area1 = 1521.11;
+    float PIB1 = 1100.0; // PIB em bilhões de reais
+    int pontos_turisticos1 = 400;
 
-    printf("Nome da cidade: ");
-    scanf(" %[^\n]s", cidade);
+    // Dados do Rio de Janeiro
+    char cidade2[] = "Rio de Janeiro";
+    int populacao2 = 6700000;
+    float area2 = 1200.27;
+    float PIB2 = 400.0; // PIB em bilhões de reais
+    int pontos_turisticos2 = 350;
 
-    printf("Digite a população: \n");
-    scanf("%d", &populacao);
+    // Exibição dos dados cadastrados
+    printf("\n=== Dados das cidades cadastradas ===\n");
 
-    printf("Digite a área da cidade (em km²): \n");
-    scanf("%f", &area);
+    printf("\n📍 Cidade 1: %s\n", cidade1);
+    printf("População: %d habitantes\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões\n", PIB1);
+    printf("Pontos turísticos: %d\n", pontos_turisticos1);
 
-    printf("Digite o PIB da cidade: \n");
-    scanf("%f", &PIB);
+    printf("\n📍 Cidade 2: %s\n", cidade2);
+    printf("População: %d habitantes\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões\n", PIB2);
+    printf("Pontos turísticos: %d\n", pontos_turisticos2);
 
-    printf("Digite a quantidade de pontos turísticos: \n");
-    scanf("%d", &pontos_turisticos);
-
-    printf("\nDados da cidade cadastrada:\n");
-    printf("Cidade: %s\n", cidade);
-    printf("População: %d habitantes\n", populacao);
-    printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões\n", PIB);
-    printf("Pontos turísticos: %d\n", pontos_turisticos);
-
-    return 0; 
+    return 0;
 }
